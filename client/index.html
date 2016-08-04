@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Score Card</title>
+    <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/templates.js"></script>
+    <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </head>
+  <body>
+    <div class="grid-frame vertical">
+      <ul class="menu-bar" id="top-bar">
+        <li><a class="tiny success button" href="#/#background">Background</a></li>
+        <li><a class="tiny warning button" href="#/#personality">Personality</a></li>
+        <li><a class="tiny alert button" href="#/#technical">Technical</a></li>
+        <li><a class="tiny primary button" href="#/#inferred">Inferred</a></li>
+      </ul>
+      <div id="search" class="grid-content shrink" style="padding: 0;">
+        <ul class="primary condense menu-bar">
+          <li class="app-name"><a href="/"><strong>Interview Score</strong></a></li>
+          <li>
+            <span class="inline-label search-bar">
+            <input class="small-6" type="search">
+            <a href="#" class="dark button">Search</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div ui-view></div>
+    </div>
+  </body>
+</html>

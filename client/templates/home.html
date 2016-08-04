@@ -1,0 +1,392 @@
+---
+name: home
+url: /
+---
+
+<div class="grid-block">
+  <div class="grid-content">
+    <h1 id="background" class="title text-center">Candidate Name</h1>
+  </div>
+</div>
+
+
+<div class="grid-block">
+  <div class="grid-block small-10">
+    <div class="grid-content">
+      <zf-accordion auto-open="false" style="width:100%;">
+  
+        <zf-accordion-item title="Where are you from?" class="green">
+          <textarea name="" id="" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+  
+        <zf-accordion-item title="Are you a US Citizen?" class="green">
+          <form action="">
+            <input type="radio" name="citizen" value="Yes" id="citizenYes"><label for="citizenYes">Yes</label>
+            <input type="radio" name="citizen" value="No" id="citizenNo"><label for="citizenNo">No</label>
+            <p>If No, do you have a work permit?</p>
+            <input type="radio" name="permit" value="Yes" id="permitYes"><label for="permitYes">Yes</label>
+            <input type="radio" name="permit" value="No" id="permitNo"><label for="permitNo">No</label>
+            <p>If No, the cost of the bootcamp is $14K, are you aware of that?</p>
+            <textarea name="" id="cost-aware" cols="30" rows="5"></textarea>
+          </form>
+        </zf-accordion-item>
+  
+        <zf-accordion-item title="Where did you go to school?" class="green">
+          <textarea name="" id="school-where" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+  
+        <zf-accordion-item title="What was your major?" class="green">
+          <textarea name="" id="major" cols="30" rows="5"></textarea>
+          <p>Did you graduate?</p>
+          <input type="radio" name="graduate" value="Yes" id="graduateYes"><label for="graduateYes">Yes</label>
+          <input type="radio" name="graduate" value="No" id="graduateNo"><label for="graduateNo">No</label>
+          <p>If Yes, with what degree?</p>
+          <textarea name="" id="degree" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+  
+        <zf-accordion-item title="How would you pay for the bootcamp?" class="green">
+          <input type="checkbox" id="savings"><label for="savings">Savings</label>
+          <br>
+          <input type="checkbox" id="loan"><label for="loan">Loan</label>
+          <br>
+          <input type="checkbox" id="family-friends"><label for="family-friends">Family and Friends</label>        
+        </zf-accordion-item>
+  
+        <zf-accordion-item title="What is your plan after the bootcamp?" class="green">
+          <p>What would you do?</p>
+          <p>How would you do it?</p>
+          <p>Where would you live?</p>
+          <textarea name="" id="after-bootcamp" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+  
+        <zf-accordion-item title="Do you have a family?" class="green">
+          <input type="checkbox" id="married"><label for="married">Married</label>
+          <br>
+          <p>Are they okay with the plan?</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="spouse-okay">
+          <input type="checkbox" id="kids"><label for="kids">Kids</label>
+          <br>
+          <p>What is your plan for them while in the camp? Who will take care of them? Who will support your spouse (if any)?</p>
+          <textarea name="" id="kids-plan" cols="30" rows="5"></textarea>
+          <p>Is there a plan in place for the kids?</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id-"kids-okay">
+          <input type="checkbox" id="parents"><label for="parents">Parents</label>
+          <p>Where do they live?</p>
+          <textarea name="" id="where-parents" cols="30" rows="5"></textarea>
+          <p>Are they okay with the plan?</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="parents-okay">
+        </zf-accordion-item>
+        
+        <zf-accordion-item title="Are you willing to relocate for a job?" class="green">
+          <p class="range text-left">No</p><p class="range text-right">Yes</p>
+          <input type="range" min="1" max="10" id="job-relocate">
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Where would your ideal place to live be?" class="green">
+          <textarea name="" id="ideal-location" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="What are you doing now for work?" class="green">
+          <p>(Money situation)</p>
+          <input type="checkbox" id="school-loans"><label for="school-loans">School - Loans</label>
+          <br>
+          <input type="checkbox" id="school-parents"><label for="school-parents">School - Parents</label>
+          <br>
+          <input type="checkbox" id="work-savings"><label for="work-savings">Savings</label>
+          <br>
+          <input type="checkbox" id="work"><label for="work">Work</label>
+          <input type="checkbox" id="work-FT"><label for="work-FT">FT</label>
+          <input type="checkbox" id="work-PT"><label for="work-PT">PT</label>
+        </zf-accordion-item>
+
+        <zf-accordion-item id="personality" title="How much do you make now?" class="green">
+          <textarea name="" id="salary-now" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Do your friends come to you for help solving problems?" class="orange">
+          <input type="radio" name="help" value="Yes" id="help-Yes"><label for="help-Yes">Yes</label>
+          <input type="radio" name="help" value="No" id="help-No"><label for="help-No">No</label>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Do you like video games?" class="orange">
+          <input type="radio" name="vg" value="Yes" id="vg-Yes"><label for="vg-Yes">Yes</label>
+          <input type="radio" name="vg" value="No" id="vg-No"><label for="vg-No">No</label>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Do you like board games?" class="orange">
+          <input type="radio" name="bg" value="Yes" id="bg-Yes"><label for="bg-Yes">Yes</label>
+          <input type="radio" name="bg" value="No" id="bg-No"><label for="bg-No">No</label>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Do you enjoy problem-solving?" class="orange">
+          <input type="radio" name="ps" value="Yes" id="ps-Yes"><label for="ps-Yes">Yes</label>
+          <input type="radio" name="ps" value="No" id="ps-No"><label for="ps-No">No</label>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="How do you go about influencing someone to accept your ideas?" class="orange">
+          <p>Look for "think about it from their perspective", "importance of strategy", "realization that good, even great ideas, sometimes don’t get accepted"</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="accept-ideas">
+          <textarea name="" id="accept-ideas-notes" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="What do you do when you know you're right and others disagree with you?" class="orange">
+          <p>Look for "look at it from their perspective", seek win win solutions and openness to change</p>
+          <textarea name="" id="disagreement" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="How would you be described by a close friend?" class="orange">
+          <p>Look for signs of character, maturity, high standards</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="close-friend">
+          <textarea name="" id="close-friend-notes" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="What do you consider your most significant accomplishment and why?" class="orange">
+          <p>Look for answers that set them apart from crowd, something they did well and are proud of</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="accomplishment">
+          <textarea name="" id="accomplishment-notes" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="What are the most important features you are looking for in a job and why?" class="orange">
+          <p>Look for an answer that ties into their strongest skills, ties into goals of organization and recognizes importance of change and development</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="job-features">
+          <textarea name="" id="job-features-notes" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+  
+        <zf-accordion-item title="What qualities would be most important in a developer?" class="orange">
+          <p>Look for ability to see and understand our needs including teamwork, quality and customer service</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="position">
+          <textarea name="" id="position-notes" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="What is the most intellectually challenging thing you have done?" class="orange">
+          <p>Look for problem solving ability and learning from prior experience</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="intellect">
+          <textarea name="" id="intellect-notes" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="How did you prepare for this interview?" class="orange">
+          <p>Look for a clear organized mind at work</p>
+          <textarea name="" id="interview-prepare" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="What is your greatest strength and weakness and how will these affect your performance here?" id="technical" class="orange">
+          <p>Look for evidence of an organized mind and little patience for people that don't value the same sense of order</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="s-w">
+          <textarea name="" id="s-w-notes" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Why do you want to learn Full Stack JS?" class="red">
+          <p>Look for a clear organized mind at work</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="why-full">
+          <textarea name="" id="interview-prepare" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="What are you expecting to make as your starting salary out of a bootcamp?" class="red">
+          <textarea name="" id="starting-salary" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="What is your professional 5-year goal?" class="red">
+          <p>Look for a response that suggests ambition and thoughtfulness about ways to get established</p>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="five-year">
+          <textarea name="" id="five-year-notes" placeholder="Startup/job" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="What questions do you have for us?" class="red">
+          <textarea name="" id="questions" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Our program is not easy, it's all in. Are you ready for that?" class="red">
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="all-in">
+          <textarea name="" id="all-in-notes" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Why do you want to come to Coding House?" class="red">
+          <input type="checkbox" id="live-in"><label for="live-in">Live-In</label>
+          <br>
+          <input type="checkbox" id="tuition"><label for="tuition">Tuition</label>
+          <br>
+          <input type="checkbox" id="silicon-valley"><label for="silicon-valley">Silicon Valley</label>
+          <br>
+          <input type="checkbox" id="js"><label for="js">JavaScript</label>
+          <br>
+          <input type="checkbox" id="other"><label for="other">Other:</label>
+          <br>
+          <textarea name="" id="other-reason" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item id="inferred" title="Are you ready to go all-in and show us your code?" class="red">
+          <textarea name="" id="show-code" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="English" class="blue">
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="english">
+          <textarea name="" id="english-notes" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Articulation of thoughts" class="blue">
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="thoughts">
+          <textarea name="" id="thoughts-notes" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Are they fun?" class="blue">
+          <input type="radio" name="fun" value="downer" id="fun-downer"><label for="fun-downer">Downer</label>
+          <br>
+          <input type="radio" name="fun" value="dead-fish" id="fun-dead-fish"><label for="fun-dead-fish">Dead fish</label>
+          <br>
+          <input type="radio" name="fun" value="maybe-fake" id="fun-maybe-fake"><label for="fun-maybe-fake">Fun, but may be fake</label>
+          <br>
+          <input type="radio" name="fun" value="fun" id="fun-fun"><label for="fun-fun">Fun</label>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Coding experience" class="blue">
+          <label for="html">HTML</label>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="html">
+          <br>
+          <label for="java">Java</label>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="java">
+          <br>
+          <label for="python">Python</label>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="python">
+          <br>
+          <label for="js-xp">JavaScript</label>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="js-xp">
+          <br>
+          <label for="ruby">Ruby</label>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="ruby">
+          <br>
+          <label for="php">PHP</label>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="php">
+          <br>
+          <label for="matlab">MatLab</label>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="matlab">
+          <br>
+          <label for="plus-plus">C++</label>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="plus-plus">
+          <br>
+          <label for="sharp">C#</label>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="sharp">
+          <br>
+          <label for="other-xp">Other:</label>
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="other-xp">
+          <br>
+          <textarea name="" id="other-xp-notes" cols="30" rows="5"></textarea>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Did they read the website?" class="blue">
+          <input type="radio" name="read-site" value="nope" id="nope"><label for="nope">Nope</label>
+          <br>
+          <input type="radio" name="read-site" value="sorta" id="sorta"><label for="sorta">Sorta</label>
+          <br>
+          <input type="radio" name="read-site" value="mostly" id="mostly"><label for="mostly">Mostly</label>
+          <br>
+          <input type="radio" name="read-site" value="everything" id="everything"><label for="everything">Everything</label>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Are they detail-oriented?" class="blue">
+          <p class="range text-left">Not at all</p><p class="range text-right">Microscope</p>
+          <input type="range" min="1" max="10" id="detail">
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Do they come across professional?" class="blue">
+          <input type="radio" name="professional" value="ghetto" id="ghetto"><label for="ghetto">Ghetto</label>
+          <br>
+          <input type="radio" name="professional" value="immature" id="immature"><label for="immature">Immature</label>
+          <br>
+          <input type="radio" name="professional" value="young" id="young"><label for="young">Young, but could be trained</label>
+          <br>
+          <input type="radio" name="professional" value="casual" id="casual"><label for="casual">Casual</label>
+          <br>
+          <input type="radio" name="professional" value="professional" id="professional"><label for="professional">Professional</label>
+          <br>
+          <input type="radio" name="professional" value="stuffy" id="stuffy"><label for="stuffy">Stuffy</label>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Resourceful?" class="blue">
+          <p class="range text-left">Not at all</p><p class="range text-right">Survivor</p>
+          <input type="range" min="1" max="10" id="resourceful">
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Results-oriented?" class="blue">
+          <p class="range text-left">Not at all</p><p class="range text-right">CEO</p>
+          <input type="range" min="1" max="10" id="results">
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Self-motivated?" class="blue">
+          <p class="range text-left">Not at all</p><p class="range text-right">Completely</p>
+          <input type="range" min="1" max="10" id="motivated">
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Is money tight for them?" class="blue">
+          <p class="range text-left">Bill Gates</p><p class="range text-right">Broke</p>
+          <input type="range" min="1" max="10" id="money-level">
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Overall skill level" class="blue">
+          <p class="range text-left">1</p><p class="range text-right">10</p>
+          <input type="range" min="1" max="10" id="skill-level">
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Overall recommendation" class="blue">
+          <input type="radio" name="recommend" value="yes" id="rec-yes"><label for="rec-yes">Yes</label>
+          <input type="radio" name="recommend" value="no" id="rec-no"><label for="rec-no">No</label>
+          <textarea name="" id="overall-rec" cols="30" rows="5" placeholder="Conclusions, pros, cons, things to follow up on, etc."></textarea>
+        </zf-accordion-item>
+      </zf-accordion>
+    </div>
+  </div>
+    
+  <div class="grid-block small-2 align-right" id="sidebar">
+    <div class="grid-content sidebar">
+      <ul class="vertical menu-bar">
+        <li><a class="small dark button stop" zf-open="stopModal" href="#"></a></li>
+        <li><a class="small dark button me" href="#"></a></li>
+        <li><a class="small dark button them" href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div zf-modal="" id="stopModal" class="dialog">
+  <div class="grid-block">
+    <div class="grid-content">
+      <p class="text-center">Are you sure you'd like to end the interview?</p>
+    </div>
+  </div>
+
+  <div class="grid-block stop-buttons">
+    <div class="grid-block">
+      <a class="success button" zf-close="" href="#">Resume Interview</a>
+    </div>
+    <div class="grid-block">
+      <a class="warning button" zf-close="" href="#">Stop and Edit</a>
+    </div>
+    <div class="grid-block">
+      <a class="alert button" href="/#saved">Stop and Save</a>
+    </div>
+  </div>
+</div>
